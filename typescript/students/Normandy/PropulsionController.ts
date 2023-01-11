@@ -16,6 +16,8 @@ export default class YourPropulsionController extends PropulsionController {
   propulsionUpdate(
     setThruster: (thruster: ThrusterName, power: number) => Error | null
   ) {
+    
+    //declare variables
     const angle = this.navigation.angle;
     const heading = this.navigation.targetAngle;
     const headingDiff = angleDiff(angle, heading);
