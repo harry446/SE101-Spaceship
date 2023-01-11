@@ -17,7 +17,7 @@ export interface MapData {
 	solarSystemName: SolarSystemName
 	galaxy: GalaxyData
 }
-
+/**interface**/
 
 export const getMapData = (ship: ColonyShip): MapData => {
 	ship.energyUsed += 10
