@@ -19,7 +19,8 @@ export default class YourSensorsController extends SensorsController {
 	
 	donePassive = false
 	scanCounter = 0
-
+	
+	//checks for collisions
   	collisionCheck(target: Vector2, selfVelocity: Vector2, targetVelocity: Vector2): number {
 		//given target, selfvelocity, and target velocity; return time to impact; negative means wont impact
 		if(selfVelocity.x ==  targetVelocity.x) return -1;
